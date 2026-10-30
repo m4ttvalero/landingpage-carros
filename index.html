@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>APEX MOTORS — Veículos premium (demonstração)</title>
+    <meta
+      name="description"
+      content="Landing page demonstrativa de uma revenda de veículos premium, desenvolvida pela Studio MV."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hd" id="hd">
+      <a class="logo" href="#inicio" aria-label="APEX MOTORS, início"
+        >APEX<span>MOTORS</span></a
+      >
+      <button
+        class="bg"
+        id="bg"
+        aria-expanded="false"
+        aria-controls="nv"
+        aria-label="Abrir menu"
+      >
+        <i></i><i></i>
+      </button>
+      <nav id="nv" aria-label="Principal">
+        <a href="#inicio">Início</a><a href="#estoque">Estoque</a
+        ><a href="#diferenciais">Diferenciais</a><a href="#sobre">Sobre</a
+        ><a href="#contato">Contato</a>
+        <a
+          class="btn sm"
+          href="https://wa.me/"
+          data-wa="Olá! Vim pelo site da APEX MOTORS e gostaria de atendimento."
+          target="_blank"
+          rel="noopener"
+          >WhatsApp</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-in">
+          <p class="eye">APEX MOTORS · Revenda demonstrativa</p>
+          <h1>Seu próximo carro começa aqui.</h1>
+          <p class="lead">
+            Veículos selecionados, atendimento direto e negociação transparente,
+            do primeiro contato até a escolha final.
+          </p>
+          <div class="row">
+            <a class="btn" href="#estoque">Explorar estoque</a
+            ><a
+              class="btn ghost"
+              href="https://wa.me/"
+              data-wa="Olá! Gostaria de falar com um consultor."
+              target="_blank"
+              rel="noopener"
+              >Falar com um consultor</a
+            >
+          </div>
+        </div>
+        <a class="scroll" href="#estoque" aria-label="Rolar até o estoque"
+          ><span></span
+        ></a>
+      </section>
+
+      <section class="sec" id="estoque">
+        <div class="wrap">
+          <p class="eye rv">Estoque em destaque</p>
+          <h2 class="rv">Encontre o carro certo.</h2>
+          <form
+            class="fl rv"
+            id="fl"
+            role="search"
+            aria-label="Buscar veículos"
+          >
+            <div>
+              <label for="q">Marca ou modelo</label
+              ><input
+                id="q"
+                type="search"
+                placeholder="Ex.: Golf, Hilux"
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="ct">Categoria</label
+              ><select id="ct">
+                <option value="">Todas</option>
+              </select>
+            </div>
+            <div>
+              <label for="pmin">Preço mínimo (R$)</label
+              ><input
+                id="pmin"
+                type="number"
+                min="0"
+                step="10000"
+                inputmode="numeric"
+                placeholder="0"
+              />
+            </div>
+            <div>
+              <label for="pmax">Preço máximo (R$)</label
+              ><input
+                id="pmax"
+                type="number"
+                min="0"
+                step="10000"
+                inputmode="numeric"
+                placeholder="Sem limite"
+              />
+            </div>
+            <div>
+              <label for="an">Ano a partir de</label
+              ><select id="an">
+                <option value="">Qualquer</option>
+              </select>
+            </div>
+            <button class="btn ghost" type="reset">Limpar filtros</button>
+          </form>
+          <p class="rs" id="rs" aria-live="polite"></p>
+          <div class="gd" id="gd"></div>
+          <div class="vz" id="vz" hidden>
+            <h3>Nenhum veículo encontrado</h3>
+            <p>Ajuste os filtros ou limpe a busca para ver todo o estoque.</p>
+          </div>
+          <p class="nota">
+            Estoque, valores e dados deste site são fictícios, criados para
+            demonstração.
+          </p>
+        </div>
+      </section>
+
+      <section class="sec alt" id="diferenciais">
+        <div class="wrap">
+          <p class="eye rv">Diferenciais</p>
+          <h2 class="rv">Comprar com clareza.</h2>
+          <div class="df">
+            <article class="rv">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
+              </svg>
+              <h3>Atendimento personalizado</h3>
+              <p>
+                Um consultor acompanha você do primeiro contato à decisão, no
+                seu ritmo.
+              </p>
+            </article>
+            <article class="rv">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12.5l3 3 5-6" />
+              </svg>
+              <h3>Veículos selecionados</h3>
+              <p>
+                Estoque enxuto, com informações claras e organizadas sobre cada
+                exemplar.
+              </p>
+            </article>
+            <article class="rv">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+              <h3>Transparência na negociação</h3>
+              <p>
+                Preço, condições e detalhes do veículo apresentados de forma
+                direta.
+              </p>
+            </article>
+            <article class="rv">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 5h16v11H9l-5 4z" />
+              </svg>
+              <h3>Suporte durante a escolha</h3>
+              <p>
+                Dúvidas sobre ficha técnica e próximos passos respondidas pelo
+                WhatsApp.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="sobre">
+        <div class="wrap sb">
+          <div
+            class="foto rv"
+            role="img"
+            aria-label="Fotografia de um veículo esportivo em ambiente escuro"
+          ></div>
+          <div class="rv">
+            <p class="eye">Sobre a revenda</p>
+            <h2>Paixão por carro, atendimento de gente.</h2>
+            <p>
+              A APEX MOTORS é uma revenda fictícia criada para demonstrar como a
+              Studio MV desenvolve sites para o setor automotivo. O foco é uma
+              busca clara, informação organizada e contato direto com a loja,
+              sem complicação.
+            </p>
+            <p>
+              Todo o conteúdo desta página é demonstrativo. Se você tem uma
+              revenda e quer uma presença digital à altura do seu estoque,
+              conheça o trabalho da
+              <a
+                href="https://studio-mv-novo.pages.dev"
+                target="_blank"
+                rel="noopener"
+                >Studio MV</a
+              >.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="rv">
+          <h2>Encontrou seu próximo carro?</h2>
+          <p>Fale com um consultor agora e tire suas dúvidas pelo WhatsApp.</p>
+          <a
+            class="btn"
+            href="https://wa.me/"
+            data-wa="Olá! Encontrei um carro no site da APEX MOTORS e gostaria de conversar."
+            target="_blank"
+            rel="noopener"
+            >Iniciar conversa</a
+          >
+        </div>
+      </section>
+
+      <section class="sec" id="contato">
+        <div class="wrap ct">
+          <div class="rv">
+            <p class="eye">Contato e localização</p>
+            <h2>Venha conhecer.</h2>
+            <dl class="info">
+              <dt>Telefone</dt>
+              <dd>(00) 00000-0000 <small>número demonstrativo</small></dd>
+              <dt>Endereço</dt>
+              <dd>
+                Av. Exemplo, 1000 — Cidade/UF
+                <small>endereço demonstrativo</small>
+              </dd>
+              <dt>Horário</dt>
+              <dd>
+                Seg a sex, 9h às 18h · Sáb, 9h às 13h
+                <small>horário demonstrativo</small>
+              </dd>
+            </dl>
+            <a
+              class="btn"
+              href="https://wa.me/"
+              data-wa="Olá! Gostaria de agendar uma visita."
+              target="_blank"
+              rel="noopener"
+              >Agendar visita pelo WhatsApp</a
+            >
+          </div>
+          <div class="mapa rv" id="mapa">
+            <p>
+              Espaço reservado para o mapa.<br />Substitua este bloco pelo
+              iframe do Google Maps da loja.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ft">
+      <div class="wrap fg">
+        <div>
+          <a class="logo" href="#inicio">APEX<span>MOTORS</span></a>
+          <p>
+            Revenda fictícia criada pela Studio MV para demonstração. Estoque,
+            valores e contatos não são reais.
+          </p>
+        </div>
+        <nav aria-label="Rodapé">
+          <a href="#estoque">Estoque</a><a href="#diferenciais">Diferenciais</a
+          ><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+        </nav>
+        <ul class="rd" id="rd" aria-label="Redes sociais"></ul>
+      </div>
+      <p class="cp">
+        © <span id="ano"></span> APEX MOTORS (demonstração). Todos os direitos
+        reservados.
+      </p>
+    </footer>
+
+    <dialog id="md" aria-labelledby="mt">
+      <div class="mb">
+        <button class="x" id="mx" aria-label="Fechar detalhes">×</button>
+        <div>
+          <div class="gal">
+            <img id="gi" alt="" /><button
+              class="ar l"
+              id="gp"
+              aria-label="Foto anterior"
+            >
+              ‹</button
+            ><button class="ar r" id="gn" aria-label="Próxima foto">›</button>
+          </div>
+          <div class="th" id="th"></div>
+        </div>
+        <div class="mi">
+          <p class="eye" id="me"></p>
+          <h3 id="mt"></h3>
+          <p class="pr" id="mpr"></p>
+          <p class="ds" id="mds"></p>
+          <dl class="fc" id="mdl"></dl>
+          <a
+            class="btn"
+            id="mw"
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener"
+            >Chamar no WhatsApp</a
+          >
+        </div>
+      </div>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>

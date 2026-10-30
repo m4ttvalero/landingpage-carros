@@ -1,0 +1,6 @@
+Fotos (JPG, ~1600px de largura, de fonte com licença de uso):
+  assets/hero.jpg      fundo da primeira tela
+  assets/sobre.jpg     foto da seção Sobre
+  assets/cta.jpg       fundo da seção de conversão
+  assets/carros/<id>-1.jpg, -2.jpg, -3.jpg   ids: porsche-911, bmw-320i, audi-q5, golf-gti, hilux-srx, mustang-gt
+Enquanto uma foto não existir, a página mostra um placeholder elegante.
